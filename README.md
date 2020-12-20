@@ -27,6 +27,7 @@ With Sales as the dependent variable and google_ads, facebook and ad_campaign sp
 linear_model = lm( sales ~., data)
 summary(linear_model)
 ```
+![MLR output](https://github.com/Gichere/marketing-mixed-models-using-MLR/blob/main/mlr.png)
 
 The overall model is very significant with a p-value of 2.2e-16. Apart from the intercept which is a constant term, both Google ads and Facebook turn out to be the most significant variable which also has a very strong and moderate correlation, respectively, with the sales volume. The R-squared value is 0.8972 which means that the model captures 90% of the variance present in the data.
 
@@ -55,6 +56,7 @@ df_cc$Percentage_Contribution = round(df_cc$Contribution*100/sum(df_cc$Contribut
 
 ggplot(df_cc,aes(y=Percentage_Contribution,x=Medium))+geom_bar(stat='identity',fill = 'blue')+coord_flip()
 ```
+![Contribution charts](https://github.com/Gichere/marketing-mixed-models-using-MLR/blob/main/mmm.png)
 ## Price elasticity
 Calculating the effectiveness or elasticity of each medium which is the percentage change in sales volume with a unit change in the spend.
  ```
@@ -63,4 +65,4 @@ df_cc2 = df_cc
 df_cc2 = df_cc2[df_cc2$Medium != 'Base Sale',c("Medium","Elasticity")]
 print(df_cc2)
 ```
- 
+![](https://github.com/Gichere/marketing-mixed-models-using-MLR/blob/main/last.png)
