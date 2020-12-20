@@ -1,6 +1,6 @@
 # marketing-mixed-models-using-MLR
 ---
-# Application of Market Mix Modellingwith using Multiple Linear Regression
+# Application of Market Mix Modelling using Multiple Linear Regression
 ## Quantifying the impact of each of the marketing channels on the sales volume.
 Market Mix Modelling (MMM) is an analytical approach that turns marketing and sales data into a quantity that can measure the impact of the marketing channels on the sales volume. This technique is derived through regression between sales and marketing spends on each channel.
 
