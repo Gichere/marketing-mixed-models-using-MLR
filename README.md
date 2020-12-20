@@ -11,12 +11,14 @@ Since multilinear regression is used, the equation can be given as follows:
 Where Sales represents Sales Volume, Channel 1 and Channel 2 are different marketing channels, β_0 represents the Base Sales, which is the sales volume, in the absence of any marketing campaigns, because of natural demand, brand loyalty, and awareness. On the other hand, β_1 and β_2 are the coefficients for Channel 1 and Channel 2, representing the contribution of each channel to the sales volume.
 
 ### Importing our libraries, read our dataset, check for missing values and understand the summary statistics of each column:
+```
 library(ggplot2)
 library(reshape2)
+```
 # Reading the dataset 
-data = read.csv('advertising.csv')
+```data = read.csv('advertising.csv')```
 # Checking for missing values
-sapply(data, function(x) sum(is.na(x)))
+```sapply(data, function(x) sum(is.na(x)))```
 # Checking summary statistics of each column
 summary(data)
 ### Performing a Multiple Linear Regression 
