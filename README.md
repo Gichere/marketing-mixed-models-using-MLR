@@ -1,4 +1,4 @@
-# marketing-mixed-models-using-MLR
+# Quantifying the impact of marketing on the sales volume using multiple linear regression (Market Mix Modelling)
 ---
 # Application of Market Mix Modelling using Multiple Linear Regression
 ## Quantifying the impact of each of the marketing channels on the sales volume.
